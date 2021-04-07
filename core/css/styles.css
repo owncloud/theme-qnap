@@ -1,0 +1,50 @@
+/**
+ * @author Christian Scherm
+ * @copyright Copyright (c) 2021, ownCloud GmbH
+ * @license AGPL-3.0
+ *
+ * This code is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+/* Zoom for Login QR-code */
+
+.enlarge:hover {
+  z-index: 9999;
+  transform: scale(2);
+  transition: transform .2s;
+}
+
+.login-qr-wrapper {
+  padding-bottom: 5px;
+}
+
+.login-qr-first {
+  padding-right: 25px;
+}
+
+#body-login p.info {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#body-login #header {
+    padding-top: 50px;
+}
+
+#body-login .wrapper {
+    min-height: 90vh;
+}
+
+#body-login footer, #body-login .push {
+    height: auto;
+}
