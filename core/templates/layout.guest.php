@@ -50,12 +50,18 @@
 			<footer role="contentinfo">
 			<!-- Login QR-Code -->
 			<div class="login-qr-wrapper">
-				<img src="<?php print_unescaped(image_path('', 'qr-ios.png')); ?>" class="enlarge login-qr-first" width="125px"/>
-				<img src="<?php print_unescaped(image_path('', 'qr-android.png')); ?>" class="enlarge" width="125px"/>
+				<div class="mobile">
+					<a href="<?php echo $theme->getiOSClientUrl(); ?>"><img src="<?php print_unescaped(image_path('', 'appstore-ios.svg')); ?>" class="appstore-badge ios" /></a>
+					<a href="<?php echo $theme->getAndroidClientUrl(); ?>"><img src="<?php print_unescaped(image_path('', 'appstore-android.png')); ?>" class="appstore-badge android" /></a>
+				</div>
+				<div class="desktop">
+					<img src="<?php print_unescaped(image_path('', 'qr-ios.png')); ?>" class="enlarge login-qr-first" width="125px"/>
+					<img src="<?php print_unescaped(image_path('', 'qr-android.png')); ?>" class="enlarge" width="125px"/>
+				</div>
+				<p class="info">
+					<?php print_unescaped($theme->getLongFooter()); ?>
+				</p>
 			</div>
-			<p class="info">
-				<?php print_unescaped($theme->getLongFooter()); ?>
-			</p>
 		</footer>
 		</div>
 	</body>

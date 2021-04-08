@@ -32,6 +32,10 @@
   padding-right: 25px;
 }
 
+#body-login {
+  overflow: hidden;
+}
+
 #body-login p.info {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -72,4 +76,16 @@
   justify-content: end;
   -ms-flex-pack: end;
   height: auto;
+}
+
+#body-login .mobile,
+#body-login .mobile .ios,
+#body-login .mobile .android,
+#body-login .desktop {
+  display: none;
+}
+
+#body-login .appstore-badge {
+  width: 75%;
+  margin: 0 auto;
 }
