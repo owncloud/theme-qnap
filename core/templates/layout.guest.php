@@ -31,6 +31,7 @@
 	<body id="<?php p($_['bodyid']);?>">
 		<?php include('layout.noscript.warning.php'); ?>
 		<div class="wrapper">
+		<div class="spacer"></div>
 			<div class="v-align">
 				<?php if ($_['bodyid'] === 'body-login'): ?>
 					<header role="banner">
@@ -45,10 +46,8 @@
 					</header>
 				<?php endif; ?>
 				<?php print_unescaped($_['content']); ?>
-				<div class="push"></div><!-- for sticky footer -->
 			</div>
-		</div>
-		<footer role="contentinfo">
+			<footer role="contentinfo">
 			<!-- Login QR-Code -->
 			<div class="login-qr-wrapper">
 				<img src="<?php print_unescaped(image_path('', 'qr-ios.png')); ?>" class="enlarge login-qr-first" width="125px"/>
@@ -58,5 +57,6 @@
 				<?php print_unescaped($theme->getLongFooter()); ?>
 			</p>
 		</footer>
+		</div>
 	</body>
 </html>

@@ -38,19 +38,29 @@
 }
 
 #body-login #header {
-  padding-top: 50px;
+  padding-top: 0;
+}
+
+#body-login .wrapper {
+  flex-direction: column !important;
+  margin-bottom: 0 !important;
+  justify-content: space-between;
+  align-content: stretch;
+}
+
+#body-login .spacer {
+  display: flex;
+}
+
+#body-login .v-align {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
 }
 
 #body-login footer {
-  height: 147px;
-}
-
-@media all and (min-height: 640px) {
-  #body-login footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-  }  
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: auto;
 }
