@@ -38,13 +38,19 @@
 }
 
 #body-login #header {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
-#body-login .wrapper {
-    min-height: 90vh;
+#body-login footer {
+  height: 147px;
 }
 
-#body-login footer, #body-login .push {
-    height: auto;
+@media all and (min-height: 640px) {
+  #body-login footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }  
 }
