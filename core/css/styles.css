@@ -1,0 +1,91 @@
+/**
+ * @author Christian Scherm
+ * @copyright Copyright (c) 2021, ownCloud GmbH
+ * @license AGPL-3.0
+ *
+ * This code is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License, version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+/* Zoom for Login QR-code */
+
+.enlarge:hover {
+  z-index: 9999;
+  transform: scale(2);
+  transition: transform .2s;
+}
+
+.login-qr-wrapper {
+  padding-bottom: 5px;
+}
+
+.login-qr-first {
+  padding-right: 25px;
+}
+
+#body-login {
+  overflow: hidden;
+}
+
+#body-login p.info {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#body-login #header {
+  padding-top: 0;
+}
+
+#body-login .wrapper {
+  flex-direction: column !important;
+  -ms-flex-direction: column !important;
+  
+  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  align-content: stretch;
+  margin-bottom: 0 !important;
+}
+
+#body-login .spacer {
+  display: flex;
+  display: ms-flexbox;
+}
+
+#body-login .v-align {
+  display: flex;
+  display: ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  margin-top: 0;
+}
+
+#body-login footer {
+  display: flex;
+  display: ms-flexbox;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: end;
+  -ms-flex-pack: end;
+  height: auto;
+}
+
+#body-login .mobile,
+#body-login .mobile .ios,
+#body-login .mobile .android,
+#body-login .desktop {
+  display: none;
+}
+
+#body-login .appstore-badge {
+  width: 75%;
+  margin: 0 auto;
+}
