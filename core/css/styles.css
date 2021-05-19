@@ -89,3 +89,8 @@
   width: 75%;
   margin: 0 auto;
 }
+
+/* Hide EE license key input section */
+#OC\\Settings\\Panels\\Admin\\License {
+  display: none;
+}
