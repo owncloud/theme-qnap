@@ -20,8 +20,7 @@
 
 .enlarge:hover {
   z-index: 9999;
-  transform: scale(2);
-  transition: transform .2s;
+  transform: scale(2) !important;
 }
 
 .login-qr-wrapper {
@@ -36,9 +35,14 @@
   overflow: hidden;
 }
 
+#body-login footer *.show {
+  position: relative;
+}
+
 #body-login p.info {
   padding-bottom: 10px;
   padding-top: 10px;
+  z-index: 0;
 }
 
 #body-login #header {
@@ -48,7 +52,6 @@
 #body-login .wrapper {
   flex-direction: column !important;
   -ms-flex-direction: column !important;
-  
   justify-content: space-between;
   -ms-flex-pack: distribute;
   align-content: stretch;
@@ -69,6 +72,7 @@
 }
 
 #body-login footer {
+  overflow: visible;
   display: flex;
   display: ms-flexbox;
   flex-direction: column;
@@ -76,6 +80,11 @@
   justify-content: end;
   -ms-flex-pack: end;
   height: auto;
+}
+
+#body-login .mobile,
+#body-login .desktop {
+  z-index: 1000;
 }
 
 #body-login .mobile,
