@@ -5,7 +5,7 @@
 	<description>This app provides a theme for the QNAP version of ownCloud.</description>
 	<licence>AGPL</licence>
 	<author>Christian Scherm</author>
-	<version>1.0</version>
+	<version>0.1.0-rc5</version>
 	<category>customization</category>
 	<default_enable/>
 	<types>
