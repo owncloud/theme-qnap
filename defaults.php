@@ -63,7 +63,7 @@ class OC_Theme {
 	 * @return string URL
 	 */
 	public function getDocBaseUrl() {
-		return 'https://doc.owncloud.org';
+		return 'https://doc.owncloud.com';
 	}
 
 	/**
